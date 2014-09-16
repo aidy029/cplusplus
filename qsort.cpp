@@ -19,6 +19,17 @@ void qsort(int x[],int l,int u){
  }
 }
 
+void insert_sort(int arr[],int len){
+	for(int i=1;i<len;i++){
+		int t = arr[i];
+		int j = i - 1;
+		while(arr[j]>t){
+			swap(arr[j+1],arr[j]);
+			j--;
+		}
+	}
+}
+
 int main(){
     int arr[7] = {4,1,5,2,6,8,23};
     qsort(arr,0,6);
