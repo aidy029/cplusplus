@@ -4,9 +4,7 @@ using namespace std;
 void qsort(int x[],int l,int u){
  if(l<u ){
   int m=l;	
-  swap(x[l],x[m]);
   int t=x[l];
-  m=l;
   int i=l+1;
   while(i<=u){
     if(x[i]<t){
